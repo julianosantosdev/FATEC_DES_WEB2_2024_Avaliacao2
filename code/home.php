@@ -6,6 +6,7 @@ $validador->verificar_logado();
 
 <!DOCTYPE html>
 <html lang="pt-br">
+<link rel="stylesheet" href="./styles/reset.css">
 <link rel="stylesheet" href="./styles/home.css">
 
 <head>
