@@ -5,19 +5,7 @@ main {
   gap: 8px;
   margin-top: 120px;
 }
-a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  text-decoration: none;
-  width: 25%;
-  background-color: rgb(127, 135, 190);
-  text-align: center;
-  height: 40px;
-  border-radius: 8px;
-  padding: 0;
-}
+
 
 fieldset {
   display: flex;

@@ -1,0 +1,19 @@
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  width: 25%;
+  background-color: rgb(27, 45, 168);
+  text-align: center;
+  height: 40px;
+  border-radius: 8px;
+  padding: 0;
+  margin-top: 16px;
+  color: white;
+}
+
+.botoesHome {
+  width: 100%;
+}

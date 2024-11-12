@@ -12,6 +12,8 @@ $validador->verificar_logado();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/cadastrarVaga.css">
+    <link rel="stylesheet" href="./styles/botao.css">
+
     <title>Cadastro de Vagas</title>
 </head>
 

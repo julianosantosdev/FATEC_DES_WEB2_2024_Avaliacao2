@@ -8,6 +8,7 @@ $validador->verificar_logado();
 <html lang="pt-br">
 <link rel="stylesheet" href="./styles/reset.css">
 <link rel="stylesheet" href="./styles/home.css">
+<link rel="stylesheet" href="./styles/botao.css">
 
 <head>
     <meta charset="UTF-8">
@@ -19,10 +20,10 @@ $validador->verificar_logado();
         <h2>Vagas de Estágio</h2>
         <?php if ($_SESSION["logged_in"] = TRUE): ?>
             <div class="opcoes">
-                <a href="cadastrarVaga.php">CADASTRAR VAGA</a>
-                <a href=".php">LISTAR VAGA</a>
-                <a href=".php">REMOVER VAGA</a>
-                <a href="login.php">LOGOUT</a>
+                <a class="botoesHome" href="cadastrarVaga.php">CADASTRAR VAGA</a>
+                <a class="botoesHome" href="listarVagas.php">LISTAR VAGA</a>
+                <a class="botoesHome" href=".php">REMOVER VAGA</a>
+                <a class="botoesHome" href="login.php">LOGOUT</a>
             </div>
         <?php endif; ?>
     </center>
