@@ -16,18 +16,19 @@ $validador->verificar_logado();
 </head>
 
 <body>
-    <center>
-        <h2>Vagas de Estágio</h2>
-        <?php if ($_SESSION["logged_in"] = TRUE): ?>
-            <div class="opcoes">
-                <a class="botoesHome" href="cadastrarVaga.php">CADASTRAR VAGA</a>
-                <a class="botoesHome" href="listarVagas.php">LISTAR VAGA</a>
-                <a class="botoesHome" href=".php">REMOVER VAGA</a>
-                <a class="botoesHome" href="login.php">LOGOUT</a>
-            </div>
-        <?php endif; ?>
-    </center>
-    <br>
+    <main>
+        <center>
+            <h1>Vagas de Estagio</h1>
+            <?php if ($_SESSION["logged_in"] = TRUE): ?>
+                <div class="opcoes">
+                    <a class="botoesHome" href="cadastrarVaga.php">CADASTRAR VAGA</a>
+                    <a class="botoesHome" href="listarVagas.php">LISTAR VAGA</a>
+                    <a class="botoesHome" href="deletarVaga.php">REMOVER VAGA</a>
+                    <a class="botoesHome" href="login.php">LOGOUT</a>
+                </div>
+            <?php endif; ?>
+        </center>
+    </main>
 </body>
 
 </html>

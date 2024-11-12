@@ -39,8 +39,17 @@ $validador->verificar_logado();
 
       while ($linha = $consulta->fetch(PDO::FETCH_ASSOC)) {
         echo "<tr>";
-        foreach ($linha as $col) {
-          echo "<td>" . htmlspecialchars($col) . "</td>";
+
+        foreach ($linha as $chave => $col) {
+          if ($chave == "curso") {
+            if ($col == 1) {
+              echo "<td>" . htmlspecialchars("DSM") . "</td>";
+            } else {
+              echo "<td>" . htmlspecialchars("GE") . "</td>";
+            }
+          } else {
+            echo "<td>" . htmlspecialchars($col) . "</td>";
+          }
         }
         echo "</tr>";
       }

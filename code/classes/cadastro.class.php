@@ -41,6 +41,28 @@ class Cadastro
         }
     }
 
+    public function deletarVaga($idVaga)
+    {
+        try {
+            $sql = "DELETE FROM vagas WHERE id=:id";
+
+            $preparaQuery = $this->pdo->prepare($sql);
+
+
+            $preparaQuery->execute([
+                ':id' => $idVaga
+            ]);
+
+            if ($preparaQuery->rowCount() > 0) {
+                echo "Vaga deletada com sucesso!";
+            } else {
+                echo "Nenhuma vaga encontrada com o ID fornecido.";
+            }
+        } catch (PDOException $e) {
+            echo "Erro ao deletar o registro: " . $e->getMessage();
+        }
+    }
+
     public function __destruct()
     {
         $this->pdo = null;
